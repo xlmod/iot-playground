@@ -17,8 +17,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: hashicorp/http-echo:0.2.3
-          args:
-            - "-listen=80 -text=Hello_World"
+          image: wil42/playground:v1
           ports:
             - containerPort: 80
