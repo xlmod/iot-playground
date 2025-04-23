@@ -19,6 +19,6 @@ spec:
         - name: hello-world
           image: hashicorp/http-echo:0.2.3
           args:
-            - "-text=Hello World – version v1"
+            - "-listen=80 -text=Hello_World"
           ports:
             - containerPort: 80
