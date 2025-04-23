@@ -17,7 +17,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          # Using HashiCorp’s http-echo image to serve text
           image: hashicorp/http-echo:0.2.3
           args:
             - "-text=Hello World – version v1"
