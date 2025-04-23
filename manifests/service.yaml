@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     app: hello-world
-  type: LoadBalancer        # or ClusterIP / NodePort as fits your environment
   ports:
     - protocol: TCP
       port: 80               # external port
