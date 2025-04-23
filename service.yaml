@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+spec:
+  selector:
+    app: hello-world
+  type: LoadBalancer        # or ClusterIP / NodePort as fits your environment
+  ports:
+    - protocol: TCP
+      port: 80               # external port
+      targetPort: 80         # matches containerPort
+
